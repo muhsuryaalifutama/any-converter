@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Suhu</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="functions.js" type="text/javascript"></script>
+
+	</head>
+
+	<body style="background-color: #c0c0c0 ; height: 780px; width:100%;" >
+		
+		<div class="center">
+		<header>
+			<h1>Suhu</h1>
+		</header>
+		<ul>
+   <li><a href="index.html" id="link0"> Home </a><li>
+   <li><a href="MataUang.html" id="link1"> Mata Uang </a><li>
+   <li><a href="Suhu.html" id="link2"> Suhu </a><li>
+   <li><a href="Massa.html" id="link3"> Massa </a><li>
+   
+   
+	   	</ul>
+	   	<br>
+	   	<br>
+	   	<br>
+
+	    <br>
+	
+		<main>
+
+
+		<fieldset>
+			<legend>Converter</legend>
+			<p>
+				<label>Pilih Converter: </label>
+				<select id="pilihan" onchange="fungsiPilihan(this)">
+					<option selected disabled>Pilih Converter</option>
+					<optgroup label="Temperature Converter">
+						<option value="cf">Celcius => Fahrenheit</option>
+						<option value="cr">Celcius => Reamur</option>
+						<option value="ck">Celcius => Kelvin</option>
+						<option value="fc">Fahrenheit => Celcius</option>
+						<option value="fr">Fahrenheit => Reamur</option>
+						<option value="fk">Fahrenheit => Kelvin</option>
+						<option value="rc">Reamur => Celcius</option>
+						<option value="rf">Reamur => Fahrenheit</option>
+						<option value="rk">Reamur => Kelvin</option>
+						<option value="kc">Kelvin => Celcius</option>
+						<option value="kf">Kelvin => Fahrenheit</option>
+						<option value="kr">Kelvin => Reamur</option>
+					
+				</select>
+			</p>
+		</fieldset>
+		<br>
+		<br>
+		<div id="idShow1"> 
+			<form>
+				<fieldset>
+					<legend>Celcius - Fahrenheit</legend>
+					Celcius: <input
+					placeholder = "Celcius"
+					oninput = "temperatureConverter1(this.value)"
+					onchange = "temperatureConverter1(this.value)">
+					<br>
+					Fahrenheit: <span id = "outputFahrenheit1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow2"> 
+			<form>
+				<fieldset>
+					<legend>Celcius - Reamur</legend>
+					Celcius: <input
+					placeholder = "Celcius"
+					oninput = "temperatureConverter2(this.value)"
+					onchange = "temperatureConverter2(this.value)">
+					<br>
+					Reamur: <span id = "outputReamur1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow3"> 
+			<form>
+				<fieldset>
+					<legend>Celcius - Kelvin</legend>
+					Celcius: <input
+					placeholder = "Celcius"
+					oninput = "temperatureConverter3(this.value)"
+					onchange = "temperatureConverter3(this.value)">
+					<br>
+					Kelvin: <span id = "outputKelvin1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow4"> 
+			<form>
+				<fieldset>
+					<legend>Fahrenheit - Celcius</legend>
+					Fahrenheit: <input
+					placeholder = "Fahrenheit"
+					oninput = "temperatureConverter4(this.value)"
+					onchange = "temperatureConverter4(this.value)">
+					<br>
+					Celcius: <span id = "outputCelcius1"></span>
+				</fieldset>
+				</form>
+				</div>
+
+				<div id="idShow5"> 
+			<form>
+				<fieldset>
+					<legend>Fahrenheit - Reamur</legend>
+					Fahrenheit: <input
+					placeholder = "Fahrenheit"
+					oninput = "temperatureConverter5(this.value)"
+					onchange = "temperatureConverter5(this.value)">
+					<br>
+					Reamur: <span id = "outputReamur2"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow6"> 
+			<form>
+				<fieldset>
+					<legend>Fahrenheit - Kelvin</legend>
+					Fahrenheit: <input
+					placeholder = "Fahrenheit"
+					oninput = "temperatureConverter6(this.value)"
+					onchange = "temperatureConverter6(this.value)">
+					<br>
+					Kelvin: <span id = "outputKelvin2"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow7"> 
+			<form>
+				<fieldset>
+					<legend>Reamur - Celcius</legend>
+					Reamur: <input
+					placeholder = "Reamur"
+					oninput = "temperatureConverter7(this.value)"
+					onchange = "temperatureConverter7(this.value)">
+					<br>
+					Celcius: <span id = "outputCelcius2"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow8"> 
+			<form>
+				<fieldset>
+					<legend>Reamur - Fahrenheit </legend>
+					Reamur: <input
+					placeholder = "Reamur"
+					oninput = "temperatureConverter8(this.value)"
+					onchange = "temperatureConverter8(this.value)">
+					<br>
+					Fahrenheit: <span id = "outputFahrenheit2"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow9"> 
+			<form>
+				<fieldset>
+					<legend>Reamur - Kelvin </legend>
+					Reamur: <input
+					placeholder = "Reamur"
+					oninput = "temperatureConverter9(this.value)"
+					onchange = "temperatureConverter9(this.value)">
+					<br>
+					Kelvin: <span id = "outputKelvin3"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow10"> 
+			<form>
+				<fieldset>
+					<legend>Kelvin- Celcius</legend>
+					Kelvin: <input
+					placeholder = "Kelvin"
+					oninput = "temperatureConverter10(this.value)"
+					onchange = "temperatureConverter10(this.value)">
+					<br>
+					Celcius: <span id = "outputCelcius3"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow11"> 
+			<form>
+				<fieldset>
+					<legend>Kelvin- Fahrenheit</legend>
+					Kelvin: <input
+					placeholder = "Kelvin"
+					oninput = "temperatureConverter11(this.value)"
+					onchange = "temperatureConverter11(this.value)">
+					<br>
+					Fahrenheit: <span id = "outputFahrenheit3"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow12"> 
+			<form>
+				<fieldset>
+					<legend>Kelvin-Reamur </legend>
+					Kelvin: <input
+					placeholder = "Kelvin"
+					oninput = "temperatureConverter12(this.value)"
+					onchange = "temperatureConverter12(this.value)">
+					<br>
+					Reamur: <span id = "outputReamur3"></span>
+				</fieldset>
+			</form>
+		</div>
+		
+
+
+
+
+	
+		</main>
+		</div>
+		
+
+	</body>
+</html>
