@@ -1,0 +1,169 @@
+body 
+{
+  margin: 0;
+  padding: 0;
+  background-color: #b3e5fc
+}
+
+.center{
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto; 
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+li 
+{
+    float: left;
+}
+
+a
+{
+  display:block;
+  width:200px;
+  color: #808080;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+fieldset
+{
+  border: 5px solid red;
+}
+
+a:hover 
+
+{
+  background-color:#80d8ff;
+}
+
+label
+{
+  margin-bottom: 30px;
+}
+
+/* || typography */
+h1, h2
+{
+	font-family: 'Times New Roman', cursive;
+}
+
+h1 
+{
+	font-size: 4rem;
+	text-align: center;
+	color: #3f51b5;
+}
+
+h2
+{
+  font-size: 2rem;
+  text-align: center;
+}
+
+legend{
+  margin: 20px;
+  border: 20px;
+}
+
+p, input, li, fieldset, select, label, optgroup, option
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: #2a2a2a;
+}
+
+optgroup
+{
+	font-style: italic;
+}
+
+option
+{
+	font-size: 16px;
+}
+
+#rectangle 
+{
+  width: 220px;
+  height:10px;
+  background-color: blue;
+  border-radius: 60px;
+}
+
+article {
+  flex: 4;
+   padding: 1%;
+}
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size:  1rem;
+  height: 3rem;
+  line-height: 2.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+}
+ nav, aside, footer, section {
+  background-color: #01579b;
+  padding: 1%;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-variant: 'Roboto Condensed', 'sans-serif'
+}
+#idShow1, #idShow2, #idShow3, #idShow4, #idShow5, #idShow6, #idShow7, 
+#idShow8, #idShow9, #idShow10, #idShow11, #idShow12, #idShow13, #idShow14,
+#idShow15, #idShow16, #idShow17, #idShow18, #idShow19, #idShow20, #idShow21, #idShow22, #idShow23, #idShow24, #idShow25
+{
+	display: none;
+}
+aside{ flex: 1;
+  margin-left: 5px;
+  padding: 1%;
+}
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 10px;
+
+}
