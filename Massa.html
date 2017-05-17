@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Converter</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="functions.js" type="text/javascript"></script>
+	</head>
+
+	<body style="background-color: #ffe4c4; height: 780px; width:100%;">
+	<div class="center">
+		<header>
+			<h1>MASSA</h1>
+		</header>
+		<ul>
+	<li><a href="index.html" id="link0"> Home </a><li>		
+   <li><a href="MataUang.html" id="link1"> Mata Uang </a><li>
+   <li><a href="Suhu.html" id="link2"> Suhu </a><li>
+   <li><a href="Massa.html" id="link3"> Massa </a><li>
+   <br>
+   <br>
+   	<br>
+   	<br>
+   
+	</ul>
+	
+
+		<main>
+
+
+		<fieldset>
+			<legend style="color: #EEBA93; ">Converter</legend>
+			<p>
+				<label style="color: pink;">Pilih Converter: </label>
+				<select id="pilihan" onchange="fungsiPilihan(this)">
+					<option selected disabled> Pilih Converter</option>
+					<optgroup label="Mass Converter">
+						<option value="kt"> Kilogram => Ton </option>
+						<option value="kg"> Kilogram => Gram</option>
+						<option value="gk"> Gram => Kilogram</option>
+						<option value="go"> Gram => Ons</option>
+						<option value="gd"> Gram => Dekagram</option>
+				</select>
+			</p>
+		</fieldset>
+		<br>
+		<br>
+		<div id="idShow21"> 
+			<form>
+				<fieldset>
+					<legend>Gram - Kilogram </legend>
+					Gram: <input
+					placeholder = "gram"
+					oninput = "temperatureConverter21(this.value)"
+					onchange = "temperatureConverter21(this.value)">
+					<br>
+					Kilogram: <span id = "outputKilogram1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow22"> 
+			<form>
+				<fieldset>
+					<legend>Gram - Ons</legend>
+					Gram: <input
+					placeholder = "gram"
+					oninput = "temperatureConverter22(this.value)"
+					onchange = "temperatureConverter22(this.value)">
+					<br>
+					Ons: <span id = "outputOns1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow23"> 
+			<form>
+				<fieldset>
+					<legend>Gram - Dekagram </legend>
+					Gram: <input
+					placeholder = "gram"
+					oninput = "temperatureConverter23(this.value)"
+					onchange = "temperatureConverter23(this.value)">
+					<br>
+					Dekagram: <span id = "outputDekagram1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="idShow24"> 
+			<form>
+				<fieldset>
+					<legend>Kilogram- Ton</legend>
+					Kilogram: <input
+					placeholder = "Kg"
+					oninput = "temperatureConverter24(this.value)"
+					onchange = "temperatureConverter24(this.value)">
+					<br>
+					Ton: <span id = "outputTon1"></span>
+				</fieldset>
+			</form>
+		</div>
+		
+		<div id="idShow25"> 
+			<form>
+				<fieldset>
+					<legend>Kilogram- Gram</legend>
+					Kilogram: <input
+					placeholder = "Kg"
+					oninput = "temperatureConverter25(this.value)"
+					onchange = "temperatureConverter25(this.value)">
+					<br>
+					Gram: <span id = "outputGram1"></span>
+				</fieldset>
+			</form>
+		</div>
+
+
+		</main>
+		</div>
+
+	</body>
+</html>
