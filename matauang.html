@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mata Uang</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="functions.js" type="text/javascript"></script>
+
+	</head>
+
+	<body style="background-color: #add8e6; height: 780px; width:100%;">
+	
+		<div class="center">
+		<header>
+			<h1>Mata Uang</h1>
+		</header>
+		<ul>
+   <li><a href="index.html" id="link0"> Home </a><li>
+   <li><a href="MataUang.html" id="link1"> Mata Uang </a><li>
+   <li><a href="Suhu.html" id="link2"> Suhu </a><li>
+   <li><a href="Massa.html" id="link3"> Massa </a><li>
+   
+	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+		<main>
+		<fieldset>
+			<legend>Converter</legend>
+			<p>
+				<label>Pilih Converter: </label>
+				<select id="pilihan" onchange="fungsiPilihan(this)">
+					<option selected disabled>Pilih Converter</option>
+					<optgroup label="Currency Converter">
+						<option value="ru">Rupiah => USD</option>
+						<option value="ry">Rupiah => Yen</option>
+						<option value="re">Rupiah => Euro</option>
+						<option value="rr">Rupiah => Ringgit</option>
+						<option value="ur">USD => Rupiah</option>
+						<option value="uy">USD => Yen</option>
+						<option value="ue">USD => Euro</option>
+						<option value="urr">USD => Ringgit</option>
+					</optgroup>
+					
+				</select>
+			</p>
+		</fieldset>
+		<br>
+		<br>
+		<div id="idShow13"> 
+			<form>
+				<fieldset>
+					<legend>Rupiah - USD </legend>
+					Rupiah.: <input
+					placeholder = "Rp."
+					oninput = "temperatureConverter13(this.value)"
+					onchange = "temperatureConverter13(this.value)">
+					<br>
+					$USD: <span id = "outputUSD"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow14"> 
+			<form>
+				<fieldset>
+					<legend>Rupiah - Yen </legend>
+					Rupiah.: <input
+					placeholder = "Rp."
+					oninput = "temperatureConverter14(this.value)"
+					onchange = "temperatureConverter14(this.value)">
+					<br>
+					Yen: <span id = "outputYen1"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow15"> 
+			<form>
+				<fieldset>
+					<legend>Rupiah - Euro</legend>
+					Rupiah.: <input
+					placeholder = "Rp."
+					oninput = "temperatureConverter15(this.value)"
+					onchange = "temperatureConverter15(this.value)">
+					<br>
+					Euro: <span id = "outputEuro1"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow16"> 
+			<form>
+				<fieldset>
+					<legend>Rupiah - Ringgit</legend>
+					Rupiah.: <input
+					placeholder = "Rp."
+					oninput = "temperatureConverter16(this.value)"
+					onchange = "temperatureConverter16(this.value)">
+					<br>
+					Ringgit: <span id = "outputRinggit1"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow17"> 
+			<form>
+				<fieldset>
+					<legend>USD- Rupiah</legend>
+					USD: <input
+					placeholder = "$USD"
+					oninput = "temperatureConverter17(this.value)"
+					onchange = "temperatureConverter17(this.value)">
+					<br>
+					Rp.: <span id = "outputRupiah1"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow18"> 
+			<form>
+				<fieldset>
+					<legend> USD-Yen </legend>
+					USD: <input
+					placeholder = "$USD"
+					oninput = "temperatureConverter18(this.value)"
+					onchange = "temperatureConverter18(this.value)">
+					<br>
+					Yen: <span id = "outputYen2"></span>
+				</fieldset>
+			</form>
+		</div><div id="idShow19"> 
+			<form>
+				<fieldset>
+					<legend>USD-Euro </legend>
+					Usd: <input
+					placeholder = "$USD"
+					oninput = "temperatureConverter19(this.value)"
+					onchange = "temperatureConverter19(this.value)">
+					<br>
+					Euro: <span id = "outputEuro2"></span>
+				</fieldset>
+			</form>
+		</div>
+		<div id="idShow20"> 
+			<form>
+				<fieldset>
+					<legend> USD - Ringgit </legend>
+					USD: <input
+					placeholder = "$USD"
+					oninput = "temperatureConverter20(this.value)"
+					onchange = "temperatureConverter20(this.value)">
+					<br>
+					Ringgit: <span id = "outputRinggit2"></span>
+				</fieldset>
+			</form>
+		</div>
+	
+		</main>
+		</div>
+
+	</body>
+</html>
